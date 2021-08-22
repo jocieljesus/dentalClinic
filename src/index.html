@@ -12,60 +12,110 @@
 
 </head>
 <body>
-    <header class="nav-principal">
-        <div class="logo">
-            <h3> DENTAL CLINIC </h3>
-        </div>
-        <div class="menu">
-            <img src="./assets/icons/menu_white.svg" alt="menu">
-        </div>
-    </header>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h3>  DENTAL CLINIC </h3>
+            </div>
+            <button class="menu" onclick="openMenu();">
+                <img src="./assets/img/menu.png" alt="menu">
+            </button>
+        </header>
 
+        <main id="inicio">
+            <nav class="nav">
+                <div class="navClose">
+                    <button class="navCloseButton" onclick="closeMenu();">
+                        <span class="navCloseSpan " > X </span>
+                    </button>
+                </div>
+                <ul class="navUl">
+                    <li class="navList">
+                        <button class="navListButton" onclick="closeMenu();"> 
+                            <span> Home </span>
+                        </button>
+                    </li>
+                    <li class="navList">
+                        <button class="navListButton" onclick="closeMenu();"> 
+                            <span>Sobre</span>
+                        </button>
+                    </li>
+                    <li class="navList">
+                        <button class="navListButton" onclick="closeMenu(); "> 
+                            <span>Contato</span>
+                        </button>
+                    </li>
+                </ul>
 
-    <div class="container-a">
-        <h1>DENTAL CARE </h1>
-        <p> Changing Lives One Smile At A time </p>
-        <button>VIEW ALL SERVICES</button>
+            </nav>
+           <article class="col-2">
+                <div class="container-a">
+                    <h1>DENTAL CARE </h1>
+                    <p> Changing Lives One Smile At A time </p>
+                    <button>VIEW ALL SERVICES</button>
+                </div>
+                <div class="container-b">
+                <img id="image-main" src="./assets/img/img-main.jpeg" alt="Dentist">
+                </div>
+           </article>
+            
+      
+        <article class="container-0">
+            <div class="container-1">
+                <img src="./assets/img/dente.png" alt="Dente" width="80px">
+                <h3>EXCELLENT SERVICES</h3>
+                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</P>
+            </div>
+            <div class="container-2"> 
+                <img src="./assets/img/like.png" alt="Gostei"  width="80px">
+                <h3>GUARANTTED WORK</h3>
+                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</P>    
+            </div>
+    
+            <div class="container-1">
+                <img src="./assets/img/implant.png" alt="Implant"  width="80px">
+                <h3>DENTAL IMPLANT</h3>
+                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</P>
+            </div>
+            <div class="container-2"> 
+                <img src="./assets/img/horas.png" alt="Horario"  width="80px">
+                <h3>24/7 SERVICES</h3>
+                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</P>
+             </div>
+    
+        </article>
+        <article class="welcome-base" >
+            <div class="welcome">
+                <h2> Welcome to <strong>DentalPlus</strong></h2>
+                <hr>
+                <p>Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor, et ultricies sapien. Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet. </p>
+            </div>
+        </article>
+        <article class="sorriso">
+            <div class="sorrisoA" > 
+                <img src="./assets/img/sorriso1.jpg" alt="sorriso" width="500px"> 
+                <img class="dente" src="./assets/img/sorriso2.png" alt="dente" width="200px">
+                <div class="sorrisoLeia">
+                    <p>Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris</p>
+                <button>READ MORE</button>
+                </div>
+            </div>
+            <div class="sorrisoB">
+                <div class="sorrisoLeia2">
+                <h4> Make your dream smile a reality! </h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
+                </div>
+                <img src="./assets/img/sorriso3.jpg" alt="dentes" width="350px">
+            </div>
+        </article>
+    
+        </main>
+        <footer>
+            <p>Website Criado por Jociel Alves de Jesus</p>
+        </footer>
     </div>
-    <div class="container-b">
-        <img id="image-main" src="./assets/img/img-main.jpeg" alt="Dentist">
-    </div>
-
-    <div class="container-0">
-        <div class="container-1">
-            <img src="./assets/img/dente.png" alt="Dente" width="50px">
-            <h3>EXCELLENT SERVICES</h3>
-            <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</P>
-        </div>
-        <div class="container-2"> 
-            <img src="./assets/img/like.png" alt="Gostei"  width="50px">
-            <h3>GUARANTTED WORK</h3>
-            <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</P>    
-        </div>
-
-        <div class="container-1">
-            <img src="./assets/img/implant.png" alt="Implant"  width="50px">
-            <h3>DENTAL IMPLANT</h3>
-            <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</P>
-        </div>
-        <div class="container-2"> 
-            <img src="./assets/img/horas.png" alt="Horario"  width="50px">
-            <h3>34/7 SERVICES</h3>
-            <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</P>
-         </div>
-
-    </div>
-
-    <div class="bem-vindo">
-        <h2> Welcome to <strong>DentalPlus</strong></h2>
-        <hr>
-        <p>Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor, et ultricies sapien. Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet. </p>
-    </div>
-
-
-    <footer>
-        <p>Website Criado por Jociel Alves de Jesus</p>
-    </footer>
+   
+    <script src="./js/index.js"> </script>
 </body>
 
 </html>

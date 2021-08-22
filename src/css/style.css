@@ -1,77 +1,143 @@
-body{
-    height: 100%;
-    width: 100%;
+*, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"Open Sans" ,sans-serif; 
+    font-weight: inherit;
 }
 
-.nav-principal {
-    width: 100%;
+.container {
+    display: grid;
+    grid-template-rows: 10vh 60vh 60vh 60vh 60vh 60vh 10vh;
+}
+
+header{
+    
+    display: grid;
+    grid-template-columns: 200px 50px ;
     background-color: #0FACF1;
-    height: 70px;
     color: #FFF;
-    font-family: 'Roboto', sans-serif;
-    display: inline-block;
-    position:relative;
+    font-family: "Open Sans" ,sans-serif;
+    font-size: 24px;
+    grid-row: 1/2;
 
 }
 
-.logo {
-    width: 75%;
-    margin-left: 100px;
-    float: left;
-    font-size: 1.3em;
-    margin-top: -5px;
+.nav{
+    position: absolute;
+    margin-left: -280px;
+    grid-row: 2;
+    background:#555;
 }
 
-.menu > img {
-    width: 40px;
-    padding: 13px;
+.navClose {
+    text-align: right;
+    font-size: 1.5em;
+
+
 }
 
+.nav .navClose .navCloseButton {
+    border: none;
+    background: none;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.nav .navClose .navCloseButton .navCloseSpan{
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFF;
+    transition: 0.2s;
+
+}
+.nav .navClose .navCloseButton .navCloseSpan:hover{
+    color: #0FACF1;
+
+}
+
+.nav .navUl .navList .navListButton {
+    border: none;
+    background: #555;
+    color: #FFF;
+    font-size: 1.2em;
+    padding: 0.7em;
+    z-index: 10;
+    width: 200px;
+    transition: 0.2s;
+    
+}
+
+.nav .navUl .navList .navListButton:hover{
+
+    background:#0FACF1;
+}
+main{
+    grid-row: 2;
+}
+
+
+
+.col-2{
+    display: grid;
+    grid-template-columns: 3fr 4fr ;
+}
+
+.logo{
+    font-size: 20px;
+    grid-column: 2/4; 
+    margin-top: 20px;
+}
+
+.menu {
+    grid-column: 4;
+    border: none;
+    background: none;
+
+}
 
 #image-main  { 
     width: 100%;
-
-}
-
-div{
-    height: 400px;
-    display: inline-block;
 }
 
 .container-a {
 
-    font-family: 'Roboto', sans-serif;
-    width: 40%;
-    float: left;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+    grid-column-start: 1/2; 
 }
 
 .container-b{
-    width:60%;
-    float: left;
+    grid-column-start: 2;
 }
 
 .container-a h1 { 
-    padding: 20px 5px 0px 80px;
+    font-family: "Source sans pro", sans-serif;
+    margin:60px 5px 20px 100px ;
     color: #0FACF1;
-    font-size: 4em;
-    
+    font-size: 60px;  
 }
 
 .container-a button {
-    margin-left: 80px;
+    margin: 20px 5px 15px 100px ;
     color: #FFF ;
     background-color:#0FACF1 ;
-    font-size: 1.2em;
-    border: #0FACF1;
+    font-size: 18px;
+    border: none;
     width: 300px;
     height: 50px;
+    font-family: "Source sans pro", sans-serif;
 }
+
 .container-a p {
-    margin-top: -30px;
-    margin-left: 80px;
-    font-size: 1.4em;
+    
+    margin: 20px 5px 20px 100px ;
+    font-size: 22px;
+    font-weight: bold;
 }
+
 .container-0 {
+    margin-top: -100px;
     background-color: #0FACF1;
     display: flex;
     justify-content: center;
@@ -83,47 +149,123 @@ div{
     margin-left: 10%;
     color: #FFF;
     font-family: 'Roboto', sans-serif;
+
 }
+
 .container-1{
     width: 25%;
     height: 250px;
-
 }
+
 .container-2{
     width: 25%;
     height: 250px;
     background-color: #098fc9;
-    
 }
 
 .container-0 img {
-        margin:20px 100px;
     
+        margin:20px 100px;  
+        background: #FFF;
+        padding: 10px;
+        border-radius: 2.5em;
 }
+
 .container-0 h3 {
     display: flex;
     justify-content: center;
     color: #FFF;
 }
+
 .container-0 p {
     margin: 20px;
     text-align: center;
+    font-style: italic;
+    font-weight: 400;
 }
 
-.bem-vindo  {
+.welcome {
     margin:80px 350px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
-   
+    font-family: 'arial', sans-serif;  
 }
-.bem-vindo h2 {
+
+.welcome h2 {
     font-size: 2em;
     color: #0FACF1;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.welcome p {
+    font-size: 1em;
+    font-style: italic;
+    color: black;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.sorriso {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: -100px;
+    display: grid;
+    grid-column: 2fr 1fr;
+}
+.sorrisoA {
+    margin:  100px;
+    grid-column: 1/2;
+}
+.dente {
+    margin-left: -30px;
+    margin-bottom: 300px;
+    border: solid 5px;
+    border-radius: 6em;
+    border-color: #098fc9;
+
+}
+.sorrisoLeia{
     
+    font-size: 18px;
+    padding: 10px;
+    color: #333;
+    margin-left: 530px;
+    margin-top: -250px;
+    margin-right: -100px;
+    font-style: italic;
 }
-.bem-vindo p {
-    font-size: 1.2em;
+
+
+.sorrisoLeia button {
+    margin-top: 30px;
+    background-color: #0FACF1;
+    border: none;
+    padding: 10px 30px;
+    color: #fff;
 }
+
+.sorrisoB {
+    grid-column: 2;
+    margin-top: 400px;
+    margin-right: 100px;
+}
+.sorrisoLeia2{
+    position: absolute;
+    margin-right: 100px;
+    margin-left: 20px;
+    margin-top: -250px;
+    float: right;
+    font-size: 15px;
+    color: #888;
+}
+
+.sorrisoLeia2 h4 {
+    color: #0FACF1;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 30px;
+}
+
 
 footer{
     background-color:#098fc9;
@@ -134,5 +276,5 @@ footer{
     color: #FFF;
     font-size: 1.2em;
     font-family: 'Roboto', sans-serif;
-
+    grid-row-start:7;
 }
