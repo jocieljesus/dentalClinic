@@ -8,7 +8,7 @@
 
 .container {
     display: grid;
-    grid-template-rows: 10vh 80vh 50vh 60vh 60vh 40vh 15vh;
+    grid-template-rows: 10vh 80vh 50vh 60vh 60vh 40vh 80vh 15vh;
 }
 
 header{
@@ -298,6 +298,20 @@ main{
         text-align: center;
         font-weight: bold;
 }
+.sobre {
+    grid-row: 6;
+    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.sobre1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.sobre2 { 
+}
 
 footer{
     background-color:#098fc9;
@@ -308,5 +322,5 @@ footer{
     color: #FFF;
     font-size: 1.2em;
     font-family: 'Roboto', sans-serif;
-    grid-row: 7;
+    grid-row: 10;
 }
