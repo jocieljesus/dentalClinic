@@ -8,7 +8,7 @@
 
 .container {
     display: grid;
-    grid-template-rows: 10vh 80vh 50vh 60vh 60vh 40vh 80vh 15vh;
+    grid-template-rows: 10vh 80vh 50vh 60vh 60vh 40vh 80vh 80vh 80vh 15vh;
 }
 
 header{
@@ -362,6 +362,15 @@ main{
     border-color:#0FACF1;
 }
 
+.time {
+    background-color: #0FACF1;
+
+}
+
+.doctors img{
+    width: 250px;
+}
+
 footer{
     background-color:#098fc9;
     width: 100%;
@@ -371,5 +380,5 @@ footer{
     color: #FFF;
     font-size: 1.2em;
     font-family: 'Roboto', sans-serif;
-    grid-row: 10;
+    grid-row: 12;
 }
