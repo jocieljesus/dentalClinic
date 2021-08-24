@@ -8,7 +8,7 @@
 
 .container {
     display: grid;
-    grid-template-rows: 10vh 80vh 50vh 60vh 60vh 40vh 80vh 80vh 80vh 15vh;
+    grid-template-rows: 10vh 80vh 50vh 60vh 60vh 40vh 80vh 100vh  15vh;
 }
 
 header{
@@ -363,12 +363,60 @@ main{
 }
 
 .time {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: #0FACF1;
+    
 
 }
 
-.doctors img{
-    width: 250px;
+.time  h1 {
+    color: #FFF;
+    grid-column: 2/3;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+}
+.time p {
+    color: #FFF;
+    grid-column: 1/4;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+
+}
+
+.doutor img{
+    width: 300px;
+    height: 350px;
+    object-fit:cover;
+    object-position: top;
+    margin-top: 100px;
+    
+}
+
+.doutor h3 {
+    color: #FFF;
+}
+.doutor p {
+    color: #555;
+    text-align: justify;
+}
+
+#dr1{
+    grid-column: 1/2;
+    margin-left: 150px;
+    
+}
+
+#dr2{
+    grid-column: 2/3;
+    margin-left: 75px;
+    
+}
+
+#dr3{
+    grid-column: 3/4;
 }
 
 footer{
