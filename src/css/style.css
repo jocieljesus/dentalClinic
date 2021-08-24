@@ -8,7 +8,7 @@
 
 .container {
     display: grid;
-    grid-template-rows: 10vh 80vh 50vh 60vh 60vh 40vh 80vh 100vh  15vh;
+    grid-template-rows: 10vh 80vh 50vh 60vh 60vh 40vh 80vh 110vh  15vh;
 }
 
 header{
@@ -364,8 +364,12 @@ main{
 
 .time {
     display: grid;
+    height: 700px;
+    margin-top: 100px;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #0FACF1;
+    
+    
     
 
 }
@@ -374,15 +378,15 @@ main{
     color: #FFF;
     grid-column: 2/3;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
     font-size: 40px;
 }
 .time p {
     color: #FFF;
     grid-column: 1/4;
     text-align: center;
-    margin-top: 20px;
     font-size: 20px;
+    margin-top: -100px;
 
 }
 
@@ -391,32 +395,50 @@ main{
     height: 350px;
     object-fit:cover;
     object-position: top;
-    margin-top: 100px;
+    margin-top: -350px;
     
 }
 
 .doutor h3 {
-    color: #FFF;
+    color: #0FACF1;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
 }
 .doutor p {
-    color: #555;
-    text-align: justify;
+    color: #777;
+    text-align: center;
+    margin-top: 15px;
+    font-style: italic;
+    font-size: 15px;
 }
+
 
 #dr1{
     grid-column: 1/2;
+    margin-top: 200px;
     margin-left: 150px;
+    background-color: #FFF;
+    max-height: 130px;
     
 }
 
 #dr2{
     grid-column: 2/3;
+    margin-top: 200px;
     margin-left: 75px;
+    margin-right: 75px;
+    background-color: #FFF;
+    max-height: 130px;
     
 }
 
 #dr3{
     grid-column: 3/4;
+    margin-right: 150px;
+    margin-top: 200px;
+    background-color: #FFF;
+    max-height: 130px;
 }
 
 footer{
