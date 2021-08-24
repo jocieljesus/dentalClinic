@@ -19,3 +19,15 @@ function closeMenu(){
     menu.style.transform = 'translate(0,0)'
   } )
 }
+
+function scrollTo(element){
+  document.querySelector(element).scrollIntoView({ behavior: "smooth"});
+}
+document.querySelector("#inicio").addEventListener( 'click', function(event){
+  event.preventDefault(); 
+  scrollTo("#home")
+}) 
+document.querySelector("navUl").addEventListener( 'click', function(event){
+  event.preventDefault(); 
+  scrollTo("#about")
+})

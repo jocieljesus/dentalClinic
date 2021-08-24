@@ -13,7 +13,7 @@
 
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="home">
         <header>
             <div class="logo">
                 <h3>  DENTAL CLINIC </h3>
@@ -33,17 +33,17 @@
                 <ul class="navUl">
                     <li class="navList">
                         <button class="navListButton" onclick="closeMenu();"> 
-                            <span> Home </span>
+                            <span onscroll="home"> Home </span> 
                         </button>
                     </li>
                     <li class="navList">
                         <button class="navListButton" onclick="closeMenu();"> 
-                            <span>Sobre</span>
+                            <span onscroll="about">Sobre</span>
                         </button>
                     </li>
                     <li class="navList">
                         <button class="navListButton" onclick="closeMenu(); "> 
-                            <span>Contato</span>
+                            <span onscroll="doctor" >Contato</span>
                         </button>
                     </li>
                 </ul>
@@ -96,7 +96,7 @@
                 <img class="dente" src="./assets/img/sorriso2.png" alt="dente" width="200px">
                 <div class="sorrisoLeia">
                     <p>Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris</p>
-                <button>READ MORE</button>
+                <button onscroll="home" >READ MORE</button>
                 </div>
             </div>
             <div class="sorrisoB">
